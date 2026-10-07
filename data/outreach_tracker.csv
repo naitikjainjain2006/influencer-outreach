@@ -1,0 +1,31 @@
+﻿Influencer,Channel,Email,Message Generated,Sent,Date,Status,Mode,Detail
+Evy Beauty Skincare,instagram_dm,Not Found,Yes,No,,queued_manual,manual,Manual send required (no official API for cold DMs)
+Evy Beauty Skincare,email,Not Found,Yes,No,,skipped_no_email,dry_run,no valid public email
+Lavisha arora,instagram_dm,Not Found,Yes,No,,queued_manual,manual,Manual send required (no official API for cold DMs)
+Lavisha arora,email,Not Found,Yes,No,,skipped_no_email,dry_run,no valid public email
+Hiteshi Dodiya,instagram_dm,Not Found,Yes,No,,queued_manual,manual,Manual send required (no official API for cold DMs)
+Hiteshi Dodiya,email,Not Found,Yes,No,,skipped_no_email,dry_run,no valid public email
+Hannah Daniel,instagram_dm,hannahdaniel.igyt@gmail.com,Yes,No,,queued_manual,manual,Manual send required (no official API for cold DMs)
+Hannah Daniel,email,hannahdaniel.igyt@gmail.com,Yes,Yes,2026-10-06T19:50:43+00:00,simulated_sent,dry_run,dry-run: .eml written to outbox
+Mahi Chaudhary,instagram_dm,aruchaudhary874@gmail.com,Yes,No,,queued_manual,manual,Manual send required (no official API for cold DMs)
+Mahi Chaudhary,email,aruchaudhary874@gmail.com,Yes,Yes,2026-10-06T19:50:43+00:00,simulated_sent,dry_run,dry-run: .eml written to outbox
+Aanyaa,instagram_dm,aanyaaa1111@gmail.com,Yes,No,,queued_manual,manual,Manual send required (no official API for cold DMs)
+Aanyaa,email,aanyaaa1111@gmail.com,Yes,Yes,2026-10-06T19:50:43+00:00,simulated_sent,dry_run,dry-run: .eml written to outbox
+Neelima,instagram_dm,Not Found,Yes,No,,queued_manual,manual,Manual send required (no official API for cold DMs)
+Neelima,email,Not Found,Yes,No,,skipped_no_email,dry_run,no valid public email
+GlambyOmoye,instagram_dm,Not Found,Yes,No,,queued_manual,manual,Manual send required (no official API for cold DMs)
+GlambyOmoye,email,Not Found,Yes,No,,skipped_no_email,dry_run,no valid public email
+Notjustarushi,instagram_dm,Not Found,Yes,No,,queued_manual,manual,Manual send required (no official API for cold DMs)
+Notjustarushi,email,Not Found,Yes,No,,skipped_no_email,dry_run,no valid public email
+Jasmine Adetunji,instagram_dm,hello@jasadetunji.com,Yes,No,,queued_manual,manual,Manual send required (no official API for cold DMs)
+Jasmine Adetunji,email,hello@jasadetunji.com,Yes,Yes,2026-10-06T19:50:43+00:00,simulated_sent,dry_run,dry-run: .eml written to outbox
+KryolanOfficial,instagram_dm,Not Found,Yes,No,,queued_manual,manual,Manual send required (no official API for cold DMs)
+KryolanOfficial,email,Not Found,Yes,No,,skipped_no_email,dry_run,no valid public email
+Kashish Jain,instagram_dm,team@kashishjain.in,Yes,No,,queued_manual,manual,Manual send required (no official API for cold DMs)
+Kashish Jain,email,team@kashishjain.in,Yes,Yes,2026-10-06T19:50:43+00:00,simulated_sent,dry_run,dry-run: .eml written to outbox
+Its me Jossuty,instagram_dm,Not Found,Yes,No,,queued_manual,manual,Manual send required (no official API for cold DMs)
+Its me Jossuty,email,Not Found,Yes,No,,skipped_no_email,dry_run,no valid public email
+Aastha Beauty Parlour Makeup Tutorial,instagram_dm,Not Found,Yes,No,,queued_manual,manual,Manual send required (no official API for cold DMs)
+Aastha Beauty Parlour Makeup Tutorial,email,Not Found,Yes,No,,skipped_no_email,dry_run,no valid public email
+Hà Giang,instagram_dm,Not Found,Yes,No,,queued_manual,manual,Manual send required (no official API for cold DMs)
+Hà Giang,email,Not Found,Yes,No,,skipped_no_email,dry_run,no valid public email

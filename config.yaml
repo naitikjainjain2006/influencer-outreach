@@ -1,0 +1,94 @@
+# ---------------------------------------------------------------------------
+# Campaign: EDIT THESE before any live send. Placeholders are intentional.
+# ---------------------------------------------------------------------------
+campaign:
+  brand_name: "Glowlane"
+  brand_description: "a clean skincare and everyday accessories brand for young adults"   # fits: "{brand} is {description}"
+  sender_name: "Naitik Jain"
+  # Appended to every email (not counted in the 60-90 word limit). Keep opt-out + real address.
+  footer: |
+    --
+    You're receiving this because your public channel lists a business contact.
+    Reply "unsubscribe" and we will not contact you again.
+    Glowlane, Greater Noida, Uttar Pradesh, India
+  # Collaboration angle chosen by follower tier (first tier whose max_followers >= followers).
+  collab_tiers:
+    - {max_followers: 20000,  angle: "UGC content creation",   short: "UGC campaign",       offer: "free products plus a flat fee per video"}
+    - {max_followers: 50000,  angle: "affiliate marketing",     short: "affiliate program",  offer: "a commission on every sale through your code"}
+    - {max_followers: 1000000, angle: "paid sponsorship",      short: "paid collab",        offer: "a paid integration with full creative freedom"}
+
+# ---------------------------------------------------------------------------
+# Discovery
+# ---------------------------------------------------------------------------
+discovery:
+  youtube:
+    queries:
+      - "skincare routine"
+      - "makeup tutorial"
+      - "grwm get ready with me"
+      - "outfit ideas"
+      - "thrift haul"
+      - "streetwear style"
+      - "capsule wardrobe"
+      - "hair care routine"
+      - "nail art"
+      - "fashion lookbook"
+    search_type: "video"
+    region_codes: ["US", "IN"]
+    pages_per_query: 1          # each page = 50 results, 100 quota units
+    max_candidates: 250         # hard cap on channels analysed per run
+    videos_per_channel: 10
+
+# ---------------------------------------------------------------------------
+# Filtering (category implemented: Fashion & Beauty)
+# ---------------------------------------------------------------------------
+filtering:
+  allowed_platforms: ["YouTube", "Instagram", "TikTok"]
+  min_followers: 5000
+  max_followers: 100000
+  min_engagement_pct: 2.0          # (likes+comments)/views, mean of recent videos
+  min_relevance: 0.30              # share of recent videos matching the niche lexicon
+  max_days_since_last_post: 90
+  allowed_countries: []            # e.g. ["US","GB","IN"]; empty = no geo restriction. Unknown country is never penalised.
+  allowed_niches: ["Fashion", "Beauty", "Fashion & Beauty"]
+  brand_safety_blocklist: ["casino", "betting", "gambling", "nsfw", "18+", "onlyfans", "forex signals"]
+
+lexicon:
+  Beauty:
+    skincare:  ["skincare", "skin care", "serum", "moisturizer", "sunscreen", "acne", "cleanser"]
+    makeup:    ["makeup", "foundation", "lipstick", "eyeshadow", "grwm", "get ready with me", "concealer"]
+    haircare:  ["hair care", "haircare", "curly hair", "hair routine", "shampoo", "hairstyle"]
+    nails:     ["nails", "nail art", "manicure"]
+    fragrance: ["perfume", "fragrance", "cologne"]
+  Fashion:
+    styling:        ["outfit", "outfits", "ootd", "styling", "lookbook", "capsule wardrobe", "fashion"]
+    hauls:          ["haul", "try on", "try-on", "thrift", "thrifting"]
+    streetwear:     ["streetwear", "sneakers", "street style"]
+    sustainable:    ["sustainable fashion", "slow fashion", "secondhand", "second hand"]
+    accessories:    ["jewelry", "jewellery", "handbag", "accessories"]
+
+# ---------------------------------------------------------------------------
+# Enrichment
+# ---------------------------------------------------------------------------
+enrichment:
+  fetch_websites: true            # look for a public mailto: / IG link on the creator's own linked site
+  website_timeout_s: 10
+  request_delay_s: 1.0
+  user_agent: "InfluencerOutreachBot/1.0 (+contact: your-email@example.com)"
+
+# ---------------------------------------------------------------------------
+# Personalization / sending
+# ---------------------------------------------------------------------------
+personalization:
+  max_llm_retries: 3
+  email_words: [60, 90]
+  dm_words: [15, 30]
+
+sending:
+  suppression_file: "data/suppression.txt"   # one email per line, never contacted
+  delay_between_sends_s: 5
+  outbox_dir: "data/outbox"
+  dm_queue_csv: "data/dm_manual_queue.csv"
+
+storage:
+  db_path: "data/outreach.db"
